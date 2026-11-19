@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Bagheri CRM</title>
+    <meta name="description" content="مدیریت مشتریان، فروش، دریافت‌ها و موجودی با حبوبات و خشکبار باقری؛ آفلاین و مناسب آیفون." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:title" content="Bagheri CRM" />
+    <meta property="og:description" content="مدیریت آفلاین مشتریان و فروش باقری" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bagheri CRM" />
+    <meta name="twitter:description" content="مدیریت آفلاین مشتریان و فروش باقری" />
+    <meta name="theme-color" content="#f6f8f6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="باقری" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="./legacy/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./legacy/icons/icon-192.png" />
+    <script>
+      try {
+        const choice = localStorage.getItem('baqeri_theme_v1');
+        const dark = choice === 'dark' ||
+          (choice !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+      } catch {}
+    </script>
+    <script type="module" src="./src/registerServiceWorker.ts"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
